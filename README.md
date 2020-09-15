@@ -15,7 +15,9 @@ Tensorflow_2.0.0 深度网络模型训练小结，含数据集制作与增强、
 
 > **训练方法：** 使用大数据集RVL-CDIP的单个迁移学习模型，首先使用get_datasets.py制作自己的tfrecord格式数据集，然后运行test.py进行训练，训练的模型是VGG16_holistic.py。与*Transfer_learning_small_datasets*不同的是，该模型制作了属于自己的tfrecord数据集，同时读取的数据是迭代器，对于模型训练的方法稍有不同
 
-> **注：** 训练结束后，不仅可以使用tensorboard进行可视化查看，而且会利用plt模型生成对应的acc和loss曲线图，以及记录训练参数信息的自定义txt文件
+> **注：** 
+训练结束后，不仅可以使用tensorboard进行可视化查看，而且会利用plt模型生成对应的acc和loss曲线图，以及记录训练参数信息的自定义txt文件；
+complete 目录是对**Transfer_learning_small_datasets**使用tfrecord格式数据集进行改进的完整源代码
 
 
 
